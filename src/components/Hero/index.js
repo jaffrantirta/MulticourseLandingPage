@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImgHero } from '../../assets'
 import ButtonRounded from '../ButtonRounded'
+import Navbar from '../Navbar'
 
 export default function Hero() {
     return (
@@ -17,6 +17,7 @@ export default function Hero() {
                 <div className="bg-[url('/src/assets/images/hero.png')] bg-cover bg-center bg-no-repeat w-full h-full filter brightness-[0.4]"></div>
             </div>
         </div>
+
 
     )
 }
