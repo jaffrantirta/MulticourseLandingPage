@@ -5,6 +5,7 @@ import ImgTourist from './tourist.png'
 import ImgBgCountry from './bg-country.png'
 import ImgBgCountry8 from './bg-country-8.png'
 import ImgJoin from './join.png'
+import ImgBgPalm from './bg-palm.png'
 
 export {
     ImgHero,
@@ -13,5 +14,6 @@ export {
     ImgTourist,
     ImgBgCountry,
     ImgBgCountry8,
-    ImgJoin
+    ImgJoin,
+    ImgBgPalm
 }
