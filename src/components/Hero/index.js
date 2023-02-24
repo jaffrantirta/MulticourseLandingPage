@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonRounded from '../ButtonRounded'
-import Navbar from '../Navbar'
 
 export default function Hero() {
     return (
