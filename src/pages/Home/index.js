@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Navbar, Package } from '../../components'
+import { Country, Hero, Navbar, Package } from '../../components'
 
 export default function Home() {
     return (
@@ -7,6 +7,7 @@ export default function Home() {
             <Navbar className="" />
             <Hero />
             <Package />
+            <Country />
         </div>
 
     )

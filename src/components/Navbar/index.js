@@ -42,7 +42,7 @@ export default function Navbar({ className }) {
             <img
                 alt="logo"
                 src={ImgLogo}
-                className="w-16 md:w-24 h-auto shadow-lg"
+                className="w-16 md:w-24 h-auto"
             />
             <div className="hidden md:flex items-center gap-5">
                 <div className="grid grid-cols-4 gap-1 text-center text-lg">
