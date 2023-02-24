@@ -4,6 +4,7 @@ import ImgBusiness from './business.png'
 import ImgTourist from './tourist.png'
 import ImgBgCountry from './bg-country.png'
 import ImgBgCountry8 from './bg-country-8.png'
+import ImgJoin from './join.png'
 
 export {
     ImgHero,
@@ -11,5 +12,6 @@ export {
     ImgBusiness,
     ImgTourist,
     ImgBgCountry,
-    ImgBgCountry8
+    ImgBgCountry8,
+    ImgJoin
 }

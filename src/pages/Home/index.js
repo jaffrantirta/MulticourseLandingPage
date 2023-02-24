@@ -1,5 +1,5 @@
 import React from 'react'
-import { Country, Hero, Navbar, Package } from '../../components'
+import { Country, Hero, Join, Navbar, Package } from '../../components'
 
 export default function Home() {
     return (
@@ -8,6 +8,7 @@ export default function Home() {
             <Hero />
             <Package />
             <Country />
+            <Join />
         </div>
 
     )
