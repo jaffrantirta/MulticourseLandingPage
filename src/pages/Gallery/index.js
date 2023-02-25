@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Footer, Galleries, Navbar } from '../../components'
 
 export default function Gallery() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <Navbar className={`text-black`} btnMobileWhiteColor={`text-black`} />
