@@ -12,7 +12,7 @@ export default function Join() {
                 <ButtonRounded text={`Daftar!`} customStyle={`md:w-1/2`} />
             </div>
             <div className='flex flex-col justify-end'>
-                <img src={ImgJoin} className='w-3/4' />
+                <img alt='' src={ImgJoin} className='w-3/4' />
             </div>
         </div>
     )

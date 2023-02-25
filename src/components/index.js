@@ -4,6 +4,7 @@ import Package from "./Package";
 import Country from "./Country";
 import Join from "./Join";
 import Galleries from "./Galleries";
+import Footer from "./Footer";
 
 export {
     Hero,
@@ -11,5 +12,6 @@ export {
     Package,
     Country,
     Join,
-    Galleries
+    Galleries,
+    Footer
 }
