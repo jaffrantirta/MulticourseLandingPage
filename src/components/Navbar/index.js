@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { ImgLogo } from '../../assets/images'
 import ButtonRounded from '../ButtonRounded'
 
-export default function Navbar({ className }) {
+export default function Navbar({ className, btnMobileWhiteColor = 'text-white' }) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollDirection, setScrollDirection] = useState(null);
     const [hasPassedHero, setHasPassedHero] = useState(false);
@@ -37,6 +38,25 @@ export default function Navbar({ className }) {
         };
     }, [scrollDirection]);
 
+    const menus = [
+        {
+            title: 'Beranda',
+            url: '/',
+        },
+        {
+            title: 'Paket',
+            url: '/',
+        },
+        {
+            title: 'Galeri',
+            url: '/galleries',
+        },
+        {
+            title: 'Kontak',
+            url: '/',
+        },
+    ]
+
     return (
         <nav className={`${hasPassedHero ? "bg-white text-primary" : "bg-transparent text-white"} ${scrollDirection === "down" ? "-top-32" : "top-0"} transition-all duration-500 z-30 fixed inset-0 bg-transparent p-5 px-10 ${isOpen ? 'bg-white' : 'bg-transparent'} font-primary flex h-24 justify-between items-center ${className}`}>
             <img
@@ -46,18 +66,15 @@ export default function Navbar({ className }) {
             />
             <div className="hidden md:flex items-center gap-5">
                 <div className="grid grid-cols-4 gap-1 text-center text-lg">
-                    <p>Beranda</p>
-                    <p>Paket</p>
-                    <p>Galeri</p>
-                    <p>Kontak</p>
+                    {menus.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)}
                 </div>
                 <div>
                     <ButtonRounded text={`Daftar sekarang!`} />
                 </div>
             </div>
-            <div className={`transition-all md:hidden p-3 rounded-xl hover:border-primary hover:border-2 ${isOpen ? 'bg-primary' : 'bg-transparent'}`}>
+            <div className={`transition-all md:hidden p-3 rounded-xl hover:border-primary hover:border-2 ${isOpen ? '' : 'bg-transparent'}`}>
                 <button
-                    className={`block hover:text-gray-200 focus:text-gray-200 focus:outline-none ${hasPassedHero ? "text-primary" : "text-white"} ${isOpen ? 'text-white' : ''}`}
+                    className={`block hover:text-slate-500 focus:text-gray-200 focus:outline-none ${hasPassedHero ? "text-primary" : btnMobileWhiteColor} ${isOpen ? 'text-white' : ''}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <svg className='h-6 w-6 fill-current' viewBox='0 0 24 24'>
@@ -77,10 +94,7 @@ export default function Navbar({ className }) {
                 </button>
                 <div className={`transition-all duration-700 ${isOpen ? 'block bg-white text-primary' : 'hidden'} absolute p-5 w-full top-full right-0 md:relative md:flex md:items-center md:gap-5 md:pt-5 md:pb-10 md:w-auto`}>
                     <div className='grid grid-cols-1 gap-1 text-center text-lg'>
-                        <p>Beranda</p>
-                        <p>Paket</p>
-                        <p>Galeri</p>
-                        <p>Kontak</p>
+                        {menus.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)}
                     </div>
                     <div className='pt-5 justify-center flex'>
                         <ButtonRounded text={`Daftar sekarang!`} />

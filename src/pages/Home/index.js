@@ -3,8 +3,8 @@ import { Country, Footer, Galleries, Hero, Join, Navbar, Package } from '../../c
 
 export default function Home() {
     return (
-        <div className="relative">
-            <Navbar className="" />
+        <div>
+            <Navbar />
             <Hero />
             <Package />
             <Country />
