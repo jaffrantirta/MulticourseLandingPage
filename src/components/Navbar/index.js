@@ -45,7 +45,7 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white' }
         },
         {
             title: 'Paket',
-            url: '/',
+            url: '/class/with-mentor',
         },
         {
             title: 'Galeri',

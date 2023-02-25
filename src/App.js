@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Gallery, Home } from './pages';
+import { Courses, Gallery, Home } from './pages';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/galleries' element={<Gallery />} />
+        <Route path='/class/:type' element={<Courses />} />
       </Routes>
     </BrowserRouter>
   );
