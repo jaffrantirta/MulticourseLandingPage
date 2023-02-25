@@ -5,6 +5,7 @@ import Country from "./Country";
 import Join from "./Join";
 import Galleries from "./Galleries";
 import Footer from "./Footer";
+import Snap from "./Snap";
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Country,
     Join,
     Galleries,
-    Footer
+    Footer,
+    Snap
 }
