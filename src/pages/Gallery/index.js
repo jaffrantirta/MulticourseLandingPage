@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Footer, Galleries, Navbar } from '../../components'
+import { FloatingButton, Footer, Galleries, Navbar } from '../../components'
 
 export default function Gallery() {
     useEffect(() => {
@@ -7,10 +7,11 @@ export default function Gallery() {
     }, []);
     return (
         <div>
-            <Navbar className={`text-black`} btnMobileWhiteColor={`text-black`} />
+            <Navbar className={`text-black`} btnMobileWhiteColor={`text-black`} classNameMenus={`text-black`} />
             <div id='hero-section'>
                 <Galleries className={`pt-28`} />
             </div>
+            <FloatingButton />
             <Footer />
         </div>
     )

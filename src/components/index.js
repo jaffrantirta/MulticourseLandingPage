@@ -6,6 +6,7 @@ import Join from "./Join";
 import Galleries from "./Galleries";
 import Footer from "./Footer";
 import Snap from "./Snap";
+import FloatingButton from "./FloatingButton";
 
 export {
     Hero,
@@ -15,5 +16,6 @@ export {
     Join,
     Galleries,
     Footer,
-    Snap
+    Snap,
+    FloatingButton
 }

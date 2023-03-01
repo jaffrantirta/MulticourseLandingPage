@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ImgLogo } from '../../assets/images'
 import ButtonRounded from '../ButtonRounded'
 
-export default function Navbar({ className, btnMobileWhiteColor = 'text-white' }) {
+export default function Navbar({ className, btnMobileWhiteColor = 'text-white', classNameMenus = 'text-white' }) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollDirection, setScrollDirection] = useState(null);
     const [hasPassedHero, setHasPassedHero] = useState(false);
@@ -53,7 +53,7 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white' }
         },
         {
             title: 'Kontak',
-            url: '/',
+            url: '/contact-us',
         },
     ]
 
@@ -66,7 +66,7 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white' }
             />
             <div className="hidden md:flex items-center gap-5">
                 <div className="grid grid-cols-4 gap-1 text-center text-lg">
-                    {menus.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)}
+                    {menus.map((item, index) => <Link key={index} to={item.url}><p className={classNameMenus}>{item.title}</p></Link>)}
                 </div>
                 <div>
                     <ButtonRounded text={`Daftar sekarang!`} />

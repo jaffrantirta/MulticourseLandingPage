@@ -11,6 +11,8 @@ import ImgFb from './facebook.png'
 import ImgIg from './instagram.png'
 import ImgLinkedin from './Linkedin.png'
 import ImgBgNature from './bg-nature.png'
+import ImgBgNature2 from './bg-nature-2.png'
+import ImgWa from './wa.png'
 
 export {
     ImgHero,
@@ -25,5 +27,7 @@ export {
     ImgIg,
     ImgLinkedin,
     ImgTwitter,
-    ImgBgNature
+    ImgBgNature,
+    ImgBgNature2,
+    ImgWa
 }

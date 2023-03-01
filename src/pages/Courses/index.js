@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { ImgTourist } from '../../assets/images'
-import { Footer, Navbar, Snap } from '../../components'
+import { FloatingButton, Footer, Navbar, Snap } from '../../components'
 
 export default function Courses() {
     useEffect(() => {
@@ -26,6 +26,7 @@ export default function Courses() {
                 </div>
             </div>
             <Snap />
+            <FloatingButton />
             <Footer />
         </div>
     )

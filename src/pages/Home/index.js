@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Country, Footer, Galleries, Hero, Join, Navbar, Package } from '../../components'
+import { Country, FloatingButton, Footer, Galleries, Hero, Join, Navbar, Package } from '../../components'
 
 export default function Home() {
     useEffect(() => {
@@ -13,6 +13,7 @@ export default function Home() {
             <Country />
             <Join />
             <Galleries limit={3} />
+            <FloatingButton />
             <Footer />
         </div>
 
