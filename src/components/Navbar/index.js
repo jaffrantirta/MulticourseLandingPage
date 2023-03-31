@@ -40,19 +40,19 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white', 
 
     const menus = [
         {
-            title: 'Beranda',
+            title: 'Home',
             url: '/',
         },
         {
-            title: 'Paket',
+            title: 'Class',
             url: '/class/with-mentor',
         },
         {
-            title: 'Galeri',
+            title: 'Gallery',
             url: '/galleries',
         },
         {
-            title: 'Kontak',
+            title: 'Contact',
             url: '/contact-us',
         },
     ]
@@ -69,7 +69,7 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white', 
                     {menus.map((item, index) => <Link key={index} to={item.url}><p className={classNameMenus}>{item.title}</p></Link>)}
                 </div>
                 <div>
-                    <ButtonRounded text={`Daftar sekarang!`} />
+                    <ButtonRounded text={`Register now!`} />
                 </div>
             </div>
             <div className={`transition-all md:hidden p-3 rounded-xl hover:border-primary hover:border-2 ${isOpen ? '' : 'bg-transparent'}`}>
@@ -97,7 +97,7 @@ export default function Navbar({ className, btnMobileWhiteColor = 'text-white', 
                         {menus.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)}
                     </div>
                     <div className='pt-5 justify-center flex'>
-                        <ButtonRounded text={`Daftar sekarang!`} />
+                        <ButtonRounded text={`Register now!`} />
                     </div>
                 </div>
             </div>

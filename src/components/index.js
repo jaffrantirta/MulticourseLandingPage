@@ -7,6 +7,7 @@ import Galleries from "./Galleries";
 import Footer from "./Footer";
 import Snap from "./Snap";
 import FloatingButton from "./FloatingButton";
+import Card from './Card';
 
 export {
     Hero,
@@ -17,5 +18,6 @@ export {
     Galleries,
     Footer,
     Snap,
-    FloatingButton
+    FloatingButton,
+    Card
 }
