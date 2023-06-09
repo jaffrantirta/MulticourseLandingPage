@@ -71,8 +71,8 @@ export default function Footer() {
         },
     ]
     return (
-        <div className='h-fit font-primary text-slate-200'>
-            <div className='grid md:flex bg-dark p-10 h-full'>
+        <div className='h-fit font-primary text-slate-200 bg-dark'>
+            <div className='grid md:flex bg-[url("/src/assets/images/bg-nature.png")] p-10 h-full'>
                 <div className='p-10 md:hidden'>
                     <img alt='logo' src={ImgLogo} className='w-full' />
                     <div className='flex gap-2 py-5 w-full justify-center'>

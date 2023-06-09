@@ -36,7 +36,7 @@ export default function Courses() {
         <div>
             <Navbar />
             <div ref={sectionRef} id='hero-section'>
-                <div className='font-primary h-fit md:h-screen bg-secondary pt-32'>
+                <div className='font-primary h-fit md:h-screen bg-secondary bg-opacity-50 bg-[url("/src/assets/images/bg-nature.png")] pt-32'>
                     <h1 className={`text-center text-5xl font-extrabold transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'}`}>Classes with mentor</h1>
                     <div className='w-full h-1/2'>
                         <img alt='' src={ImgTourist} className='top-0 left-0 w-full h-full object-cover' />

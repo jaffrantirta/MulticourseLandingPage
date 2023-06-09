@@ -4,7 +4,7 @@ import Card from '../Card'
 
 export default function Country() {
     return (
-        <div className='h-fit font-primary bg-[url("/src/assets/images/bg-country-8.png")] bg-black bg-opacity-20 p-10'>
+        <div className='h-fit font-primary bg-[url("/src/assets/images/bg-world-op-30.png")] bg-black bg-opacity-20 p-10'>
             <div className='text-center'>
                 <p className='text-primary'>Paket</p>
                 <h1 className='text-4xl font-bold'>Internships International and Study</h1>
