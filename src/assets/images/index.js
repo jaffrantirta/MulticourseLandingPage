@@ -13,6 +13,7 @@ import ImgLinkedin from './Linkedin.png'
 import ImgBgNature from './bg-nature.png'
 import ImgBgNature2 from './bg-nature-2.png'
 import ImgWa from './wa.png'
+import ImgBGWorld from './bg-world.png'
 
 export {
     ImgHero,
@@ -29,5 +30,6 @@ export {
     ImgTwitter,
     ImgBgNature,
     ImgBgNature2,
-    ImgWa
+    ImgWa,
+    ImgBGWorld
 }
